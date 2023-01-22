@@ -92,6 +92,15 @@ GEM
       rake
     globalid (1.0.1)
       activesupport (>= 5.0)
+    haml (6.1.1)
+      temple (>= 0.8.2)
+      thor
+      tilt
+    haml-rails (2.1.0)
+      actionpack (>= 5.1)
+      activesupport (>= 5.1)
+      haml (>= 4.0.6)
+      railties (>= 5.1)
     http (5.1.1)
       addressable (~> 2.8)
       http-cookie (~> 1.0)
@@ -218,6 +227,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    temple (0.9.1)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.1)
@@ -260,6 +270,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   dotenv-rails
+  haml-rails
   http
   jbuilder (~> 2.7)
   listen (~> 3.3)
