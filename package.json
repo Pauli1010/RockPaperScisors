@@ -1,5 +1,5 @@
 {
-  "name": "rock-paper-scisors",
+  "name": "rock-paper-scissors",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",

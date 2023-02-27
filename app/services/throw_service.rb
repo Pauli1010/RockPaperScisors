@@ -10,7 +10,7 @@ class ThrowService
   def call
     throw_request_value
 
-    valid_throw_response? ? body : nil
+    valid_throw_response? ? body : GenerateThrow.new.call
   end
 
   attr_reader :body, :status_code
@@ -22,7 +22,7 @@ class ThrowService
   def valid_throw_response?
     return false unless status_code == 200
 
-    %w(rock paper scissors).include? body
+    GenerateThrow::CLASSIC_VALUES.include? body
   end
 
   # Private method retrieving data from server and parses it to a hash:

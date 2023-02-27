@@ -5,7 +5,7 @@
       <configuration>
         <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
         <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
-        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$/../RockPaperScisors" />
       </configuration>
     </facet>
   </component>
@@ -56,6 +56,8 @@
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.5, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi-compiler (v1.0.1, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.0.1, rbenv: 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="haml (v6.1.1, rbenv: 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="haml-rails (v2.1.0, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http (v5.1.1, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http-accept (v1.7.0, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http-cookie (v1.0.5, rbenv: 2.7.1) [gem]" level="application" />
@@ -107,6 +109,7 @@
     <orderEntry type="library" scope="PROVIDED" name="spring (v4.1.1, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.2.0, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.4.2, rbenv: 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="temple (v0.9.1, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.2.1, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.11, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.3.1, rbenv: 2.7.1) [gem]" level="application" />
@@ -126,7 +129,7 @@
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
-    <I18N_FOLDERS number="1" string0="$MODULE_DIR$/config/locales" />
+    <I18N_FOLDERS number="1" string0="$MODULE_DIR$/../RockPaperScisors/config/locales" />
   </component>
   <component name="RailsGeneratorsCache">
     <option name="generators">

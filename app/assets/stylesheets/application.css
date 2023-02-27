@@ -13,3 +13,64 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header, main, footer {
+    max-width: 754px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+fieldset, legend {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.btn-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box .throw-btn span {
+    margin: 0 auto 15px auto;
+    font-size: 24px;
+    color: #000;
+
+}
+
+.throw-btn {
+    width: 240px;
+    height: 273px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.rock-btn {
+    background-image: url('rock.svg');
+    background-position: center 46px ;
+}
+
+.paper-btn {
+    background-image: url('paper.svg');
+    background-position: center 36px ;
+}
+
+.scissors-btn {
+    background-image: url('scissors.svg');
+    background-position: center 22px ;
+}
+
+.rock-btn:hover, .paper-btn:hover, .scissors-btn:hover {
+    background-color: #F8F8F8;
+}
