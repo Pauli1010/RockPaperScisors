@@ -1,0 +1,115 @@
+// headers
+h1.rps-heading {
+  font-size: 50px;
+  margin-top: 130px;
+  font-weight: normal;
+}
+
+h2.rps-heading {
+  font-size: 21px;
+  margin: 45px 0 20px 0;
+}
+
+// used for legend and p tags
+.rps-normal-text {
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 300;
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+}
+
+.rps-heading {
+  color: #36006C;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  &.black {
+    color: #000;
+  }
+}
+
+.rsc-btn-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .throw-btn span {
+    margin: 0 auto 15px auto;
+    font-size: 24px;
+    color: #000;
+  }
+}
+
+.throw-box,
+.throw-btn {
+  width: 240px;
+  height: 273px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+.throw-btn:hover { background-color: #F8F8F8; }
+
+.rock-btn {
+  background-image: url('rock.svg');
+  background-position: center 46px ;
+}
+
+.paper-btn {
+  background-image: url('paper.svg');
+  background-position: center 36px ;
+}
+
+.scissors-btn {
+  background-image: url('scissors.svg');
+  background-position: center 22px ;
+}
+
+.rps-result-box {
+  position: fixed;
+  top: 30px;
+  left: calc(50vw - 245px);
+  height: 590px;
+  width: 490px;
+  background-color: #fff;
+  padding: 45px 50px;
+  box-shadow: 0 0 52px -36px rgba(0, 0, 0, 1);
+
+  h2 { font-size: 32px; }
+
+  .close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: transparent;
+    border: none;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('х-close.svg');
+    float: right;
+    clear-after: both;
+  }
+
+  .throw-box {
+    margin: auto;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    height: 73px;
+    padding: 23px 40px;
+    background-color: #36006C;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 32px;
+  }
+}

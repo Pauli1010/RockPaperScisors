@@ -1,0 +1,7 @@
+.opaque-overlay
+.rps-result-box
+  = link_to t('close'), throws_path, class: 'close accept-result-js'
+  %h2.rps-heading= t(bet_result, scope: 'rock_paper_scissors.result.title')
+  %p.rps-normal-text= t(bet_result, scope: 'rock_paper_scissors.result.result_explanation', system_throw: sys_throw)
+  .throw-box{ class: "#{sys_throw}-btn" }
+  = link_to 'Ok', throws_path, class: 'btn accept-result-js'
