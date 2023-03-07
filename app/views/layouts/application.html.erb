@@ -12,7 +12,10 @@
 
   <body>
     <%= render 'header' %>
-    <main><%= yield %></main>
+    <main>
+      <%= yield %>
+      <div class="opaque-overlay hidden"></div>
+    </main>
     <%= render 'footer' %>
   </body>
 </html>

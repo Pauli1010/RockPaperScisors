@@ -35,10 +35,14 @@ fieldset, legend {
 }
 
 .opaque-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(255, 255, 255, .8);
+}
+
+.opaque-overlay.hidden {
+    display: none;
 }

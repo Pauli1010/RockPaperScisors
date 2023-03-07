@@ -1,0 +1,8 @@
+$('.opaque-overlay').removeClass('hidden');
+$('.opaque-overlay').after("<%= escape_javascript(render 'result_box', bet_result: @result, sys_throw: @throw) %>");
+
+$('.accept-result-js').click( function(e) {
+   e.preventDefault();
+   $('.rps-result-box').remove();
+   $('.opaque-overlay').addClass('hidden');
+});

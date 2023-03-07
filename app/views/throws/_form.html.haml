@@ -5,9 +5,9 @@
       The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.
       %h2.rps-heading.black Select your bet
     .rsc-btn-box
-      = link_to throws_path(value: 'rock'), method: :post, class: 'throw-btn throw-btn-js rock-btn' do
+      = link_to throws_path(value: 'rock'), method: :post, class: 'throw-btn throw-btn-js rock-btn', data: { value: 'rock' } do
         %span Rock
-      = link_to throws_path(value: 'paper'), method: :post, class: 'throw-btn throw-btn-js paper-btn' do
+      = link_to throws_path(value: 'paper'), method: :post, class: 'throw-btn throw-btn-js paper-btn', data: { value: 'paper' } do
         %span Paper
-      = link_to throws_path(value: 'scissors'), method: :post, class: 'throw-btn throw-btn-js scissors-btn' do
+      = link_to throws_path(value: 'scissors'), method: :post, class: 'throw-btn throw-btn-js scissors-btn', data: { value: 'scissors' } do
         %span Scissors

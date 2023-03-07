@@ -6,6 +6,17 @@
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
+require("jquery")
 
 Rails.start()
 Turbolinks.start()
+
+$(document).ready(function () {
+    $('.throw-btn-js').click(function(e) {
+       e.preventDefault();
+       e.stopPropagation();
+       let href = $(this).attr('href').split('?')[0];
+       let value = $(this).data('value');
+       $.post(href, {_method: 'post', remote: true, value: value}, null, 'script');
+    });
+});

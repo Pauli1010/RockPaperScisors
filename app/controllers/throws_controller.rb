@@ -9,11 +9,10 @@ class ThrowsController < ApplicationController
 
     @throw = GenerateThrow.new.call
     @result = ::CompareInputs.new(@value, @throw).call
-    # render plain: "moje: #{@value}, wylosowane: #{throw}, wynik: #{result}"
 
     respond_to do |format|
-      format.html { render 'bet_result' }
       format.js
+      format.html { render 'bet_result' }
     end
   end
 end
