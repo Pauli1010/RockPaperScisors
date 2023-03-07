@@ -7,7 +7,7 @@ class ThrowsController < ApplicationController
   def create
     @value = params[:value]
 
-    throw = ThrowService.new.call
+    throw = GenerateThrow.new.call
     result = ::CompareInputs.new(@value, throw).call
     render plain: "moje: #{@value}, wylosowane: #{throw}, wynik: #{result}"
   end

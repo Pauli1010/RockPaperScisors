@@ -13,7 +13,7 @@ class GenerateThrow
   def call
     case variation
     when 3
-      CLASSIC_VALUES[rand(variation)]
+      CurbRockPaperScissorsService.new.call.presence || CLASSIC_VALUES[rand(variation)]
     else
       nil
     end

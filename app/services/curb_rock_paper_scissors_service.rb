@@ -3,14 +3,14 @@
 require "http"
 require 'rest-client'
 
-class ThrowService
+class CurbRockPaperScissorsService
   # Public method
   # Initiates request for the throw.
   # Returns response body if response was valid or nil
   def call
     throw_request_value
 
-    valid_throw_response? ? body : GenerateThrow.new.call
+    valid_throw_response? ? body : nil
   end
 
   attr_reader :body, :status_code
