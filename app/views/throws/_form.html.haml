@@ -1,13 +1,9 @@
 %form
   %fieldset
     %legend.rps-normal-text
-      Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools.
-      The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.
-      %h2.rps-heading.black Select your bet
+      = t('instruction', scope: 'rock_paper_scissors.form.legend')
+      %h2.rps-heading.black= t('cta', scope: 'rock_paper_scissors.form.legend')
     .rsc-btn-box
-      = link_to throws_path(value: 'rock'), method: :post, class: 'throw-btn throw-btn-js rock-btn', data: { value: 'rock' } do
-        %span Rock
-      = link_to throws_path(value: 'paper'), method: :post, class: 'throw-btn throw-btn-js paper-btn', data: { value: 'paper' } do
-        %span Paper
-      = link_to throws_path(value: 'scissors'), method: :post, class: 'throw-btn throw-btn-js scissors-btn', data: { value: 'scissors' } do
-        %span Scissors
+      = throw_link('rock')
+      = throw_link('paper')
+      = throw_link('scissors')
